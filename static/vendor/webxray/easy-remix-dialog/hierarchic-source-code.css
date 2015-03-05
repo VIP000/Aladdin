@@ -25,7 +25,7 @@ li > div.element {
 
 div.element > div.start, div.element > div.end {
   background: rgba(0,0,0,0.5);
-  color: white;
+  color: Black;
 }
 
 div.element > div.start:before {
@@ -61,7 +61,7 @@ div.element > div.start > ul.attributes div.name:after {
 }
 
 div.element > div.start > ul.attributes div.value {
-  color: white;
+  color: Black;
 }
 
 div.element > div.start > ul.attributes div.value:before {
@@ -95,7 +95,7 @@ div.element > div.end:after {
 
 div.text {
   font-family: "Helvetica Neue";
-  color: black;
+  color: Black;
 }
 
 .drop-zone {
