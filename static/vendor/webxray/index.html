@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Web X-Ray Goggles</title>
+<script src="jquery.min.js"></script>
+<script src="src/get-bookmarklet-url.js"></script>
+<style>
+body {
+	background-color: #000000;
+	color: black;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 10pt;
+	width: 40em;
+	margin: 0 auto;
+	padding: 0;
+	background-image: url(shendeng.gif);
+	background-repeat: no-repeat;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+a:hover {
+  background: yellow;
+}
+
+#bookmarklet-url {
+  border: 1px dotted black;
+  width: 100%;
+}
+
+#bookmarklet-link:hover {
+  color: black;
+}
+
+#bookmarklet-link {
+  text-decoration: none;
+  display: inline-block;
+  background: #FF9900;
+  border-radius: 4px;
+  box-shadow: 2px 2px 1px black;
+  color: white;
+  padding: 6px;
+}
+body,td,th {
+	color: #41415b;
+}
+</style>
+<a href="https://github.com/toolness/webxray/tree/style-info-experiment"><img style="position: absolute; top: 0; right: 0; border: 0;" src="gao_logo_bai.png" alt="Fork me on GitHub"></a>
+<div id="try-goggles">
+<h2>&nbsp;</h2>
+<p><a href="" id="bookmarklet-link">SITE-ALADDIN</a>.</p>
+<p>&nbsp;</p>
+<input type="text" id="bookmarklet-url">
+<p>&nbsp;</p>
+<script>
+"use strict";
+
+$(window).ready(function() {
+  $("#bookmarklet-link").attr("href", Webxray.getBookmarkletURL())
+    .text(window.location.hostname + " " + $("#bookmarklet-link").text());
+  $("#bookmarklet-url").val(Webxray.getBookmarkletURL());
+});
+</script>
+</div>

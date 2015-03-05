@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Preferences Frame</title>
+<style type="text/css">
+body {
+	background-color: #000;
+}
+body,td,th {
+	color: #41415b;
+}
+</style>
+<p>You should never see this window.</p>
+<script>
+if ('webxrayPreferences' in localStorage)
+  window.parent.postMessage(localStorage.webxrayPreferences, "*");
+else
+  window.parent.postMessage("{}", "*");
+</script>
