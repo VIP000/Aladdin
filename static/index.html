@@ -49,15 +49,18 @@ html, body, .browser {
   height: 100%;
   border: none;
 }
+body,td,th {
+	font-family: Tahoma, Geneva, sans-serif;
+}
 </style>
-<title>Baseless Browser</title>
+<title>Aladdin</title>
 <div class="browser">
   <div class="urlbar">
     <form action="/proxy">
-       <img style="margin-left:5px;" href="#" src="images/gao_logo_bai.png">
+       <img style="margin-left:5px;" href="#" src="images/gao_logo_bai.png"width="70" height="45">
       <input type="text" spellcheck="false" name="url" class="form-control" placeholder="http://">
       <button type="submit" class="btn btn-primary">
-        Go <i class="fa fa-chevron-right"></i>
+       <img src="images/rocket.png">
       </button>
 
       <!-- We're hiding the togetherJS button for now, it's not
@@ -68,12 +71,10 @@ html, body, .browser {
       </button>
 
       <button id="webxray" class="btn btn-default" title="Goggles">
-        <i class="fa fa-code-fork"></i>
-        <span class="hidden-xs">X</span>
+        <img src="images/electro.png">
       </button>
       <a id="spider" class="btn btn-default" href="/spider" target="_blank" title="Spider">
-        <i class="fa fa-bug"></i>
-        <span class="hidden-xs">Spider</span>
+        <img src="images/poison.jpg">
       </a>
       <a class="btn btn-default" href="/about/" target="_blank" title="About">
         <i class="fa fa-question"></i>
